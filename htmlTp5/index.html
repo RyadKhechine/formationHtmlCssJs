@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>TP5 fiche d'inscription</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="letitre">Fiche d'inscription des étudiants à l'université</h1>
+
+    <form action="" method="">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Entrer votre nom" />
+      </div>
+
+      <div>
+        <label for="prenom">Prénom</label>
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          placeholder="Entrer votre prénom"
+        />
+      </div>
+      <div>
+        <label>Lieu de naissance</label>
+        <input
+          type="text"
+          name="lieuDeNaissance"
+          placeholder="Entrer votre lieu de naissance"
+        />
+      </div>
+      <div>
+        <label>Date de naissance</label>
+        <input type="date" />
+      </div>
+
+      <div>
+        <label>Pays d'origine</label>
+        <select>
+          <option value="fr">France</option>
+          <option value="it">Italie</option>
+          <option value="es">Espagne</option>
+        </select>
+      </div>
+      <div>
+        <label>Civilité</label>
+        <select>
+          <option value="mr">Mr</option>
+          <option value="mme">Mme</option>
+          <option value="melle">Melle</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Moyenne obtenu en BAC</label>
+        <input type="number" />
+      </div>
+
+      <div>
+        <label>Formation</label>
+        <input type="text" placeholder="Entrer votre formation" />
+      </div>
+      <div>
+        <label>D’autres choix de formation possible :</label>
+      </div>
+
+      <div>
+        <label>Formation 1</label>
+        <input type="checkbox" value="" />
+      </div>
+      <div>
+        <label>Formation 2</label>
+        <input type="checkbox" value="" />
+      </div>
+      <div>
+        <label>Formation 3</label>
+        <input type="checkbox" value="" />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Entrer votre email" />
+      </div>
+      <div>
+        <label>Numéro de téléphone</label>
+        <input type="tel" placeholder="Entrer votre numéro de téléphone" />
+      </div>
+      <div>
+        <label>Lettre de motivation :</label>
+      </div>
+      <div>
+        <textarea rows="10" cols="70" maxlength="100">
+         Veuillez ajouter votre lettre de motivation</textarea
+        >
+      </div>
+      <div>
+        <label>Lettre de motivation</label>
+        <input type="file" />
+      </div>
+      <button type="submit">Valider</button>
+    </form>
+  </body>
+</html>
