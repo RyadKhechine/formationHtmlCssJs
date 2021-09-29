@@ -1,0 +1,76 @@
+body {
+  background-color: rgba(204, 197, 197, 0.856);
+  padding-right: 10%;
+  padding-left: 10%;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+h2 {
+  color: red;
+  font-weight: bold;
+}
+.worldWide {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table {
+  border-spacing: 0px;
+  width: 100%;
+}
+
+td {
+  padding: 0.5%;
+}
+
+tr:hover {
+  background: rgb(126, 122, 122);
+}
+
+.headertab {
+  background-color: black;
+  color: white;
+}
+
+.fondblanc {
+  background-color: rgba(255, 255, 255, 0.664);
+}
+
+figure {
+  text-align: center;
+  border: 2px solid red;
+  background-color: rgba(34, 34, 37, 0.904);
+  color: white;
+  border-radius: 1%;
+  margin: auto;
+  padding: 3%;
+  margin-top: 2%;
+}
+img {
+  width: 100%;
+}
+
+figcaption {
+  margin: 2%;
+}
+
+.styleDuP {
+  width: 90%;
+  margin: auto;
+  border: 2px solid rgb(83, 43, 226);
+  border-style: dashed;
+  padding: 2%;
+  background-color: grey;
+  color: rgb(83, 43, 226);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
