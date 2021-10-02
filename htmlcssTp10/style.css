@@ -1,0 +1,392 @@
+body {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px;
+    grid-gap: 5px;
+    padding-bottom: 2%;
+    font-weight: bold;
+    grid-template-areas:
+      "logo "
+      "services"
+      "expertise"
+      "contact";
+  }
+
+  .nav {
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+  }
+
+  .nav:nth-child(1) {
+    grid-area: logo;
+  }
+
+  .nav:nth-child(2) {
+    grid-area: services;
+  }
+  .nav:nth-child(3) {
+    grid-area: expertise;
+  }
+  .nav:nth-child(4) {
+    grid-area: contact;
+  }
+
+  .banniere {
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    /* height: 150px; */
+    line-height: 150px;
+  }
+
+  .contenuDeLaPage {
+    /* margin-bottom: 2%; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    grid-gap: 5px;
+    grid-template-areas:
+      "apropos "
+      "lienrapide1"
+      "lienrapide2";
+  }
+
+  .enfantContenuDeLaPage {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(1) {
+    grid-area: apropos;
+    line-height: 200px;
+    height: 200px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(2) {
+    grid-area: lienrapide1;
+    line-height: 250px;
+    margin-top: 3%;
+  }
+
+  .enfantContenuDeLaPage:nth-child(3) {
+    grid-area: lienrapide2;
+    height: 140px;
+    line-height: 140px;
+    margin-top: 3%;
+  }
+
+  .footer {
+    border: 1px solid black;
+    margin-top: 3%;
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    border: 1px solid black;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    grid-template-areas: "logo services expertise contact";
+  }
+
+  .nav {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+    margin-top: 15px;
+  }
+
+  .nav:nth-child(1) {
+    grid-area: logo;
+  }
+
+  .nav:nth-child(2) {
+    grid-area: services;
+  }
+  .nav:nth-child(3) {
+    grid-area: expertise;
+  }
+  .nav:nth-child(4) {
+    grid-area: contact;
+  }
+
+  .banniere {
+    border: 1px solid black;
+    margin-bottom: 2%;
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    /* height: 150px; */
+    line-height: 150px;
+  }
+
+  .contenuDeLaPage {
+    /* margin-bottom: 2%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 260px;
+    grid-gap: 5px;
+    grid-template-areas:
+      "apropos lienrapide1"
+      "apropos lienrapide2";
+  }
+
+  .enfantContenuDeLaPage {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(1) {
+    grid-area: apropos;
+    line-height: 400px;
+    height: 405px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(2) {
+    grid-area: lienrapide1;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    line-height: 250px;
+    margin-top: 0;
+  }
+
+  .enfantContenuDeLaPage:nth-child(3) {
+    grid-area: lienrapide2;
+    height: 140px;
+    margin-left: 2%;
+    line-height: 140px;
+    margin-top: 0;
+  }
+
+  .footer {
+    border: 1px solid black;
+    margin-top: 50px;
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header {
+    border: 1px solid black;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    grid-template-areas: "logo services expertise contact";
+  }
+
+  .nav {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+    margin-top: 15px;
+  }
+
+  .nav:nth-child(1) {
+    grid-area: logo;
+  }
+
+  .nav:nth-child(2) {
+    grid-area: services;
+  }
+  .nav:nth-child(3) {
+    grid-area: expertise;
+  }
+  .nav:nth-child(4) {
+    grid-area: contact;
+  }
+
+  .banniere {
+    border: 1px solid black;
+    /* margin-bottom: 2%; */
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    /* height: 150px; */
+    line-height: 150px;
+  }
+
+  .contenuDeLaPage {
+    /* margin-bottom: 2%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 260px;
+    grid-gap: 5px;
+    grid-template-areas:
+      "apropos lienrapide1"
+      "apropos lienrapide2";
+  }
+
+  .enfantContenuDeLaPage {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(1) {
+    grid-area: apropos;
+    line-height: 400px;
+    height: 405px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(2) {
+    grid-area: lienrapide1;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    line-height: 250px;
+    margin-top: 0;
+  }
+
+  .enfantContenuDeLaPage:nth-child(3) {
+    grid-area: lienrapide2;
+    height: 140px;
+    margin-left: 2%;
+    line-height: 140px;
+    margin-top: 0;
+  }
+
+  .footer {
+    border: 1px solid black;
+    margin-top: 50px;
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    border: 1px solid black;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    grid-template-areas: "logo services expertise contact";
+  }
+
+  .nav {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    padding: 3%;
+    margin-top: 15px;
+  }
+
+  .nav:nth-child(1) {
+    grid-area: logo;
+  }
+
+  .nav:nth-child(2) {
+    grid-area: services;
+  }
+  .nav:nth-child(3) {
+    grid-area: expertise;
+  }
+  .nav:nth-child(4) {
+    grid-area: contact;
+  }
+
+  .banniere {
+    border: 1px solid black;
+    /* margin-bottom: 2%; */
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    /* height: 150px; */
+    line-height: 150px;
+  }
+
+  .contenuDeLaPage {
+    /* margin-bottom: 2%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 260px;
+    grid-gap: 5px;
+    grid-template-areas:
+      "apropos lienrapide1"
+      "apropos lienrapide2";
+  }
+
+  .enfantContenuDeLaPage {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(1) {
+    grid-area: apropos;
+    line-height: 400px;
+    height: 405px;
+  }
+
+  .enfantContenuDeLaPage:nth-child(2) {
+    grid-area: lienrapide1;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    line-height: 250px;
+    margin-top: 0;
+  }
+
+  .enfantContenuDeLaPage:nth-child(3) {
+    grid-area: lienrapide2;
+    height: 140px;
+    margin-left: 2%;
+    line-height: 140px;
+    margin-top: 0;
+  }
+
+  .footer {
+    border: 1px solid black;
+    margin-top: 50px;
+    display: grid;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+  }
+}
